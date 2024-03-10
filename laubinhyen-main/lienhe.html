@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILL LOUNGE</title>
+    <link rel="stylesheet" href="css/CSS.css">
+    <link rel="icon " href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Header (bao gồm trang chủ+liên hệ+sản phẩm+giỏ hàng)-->
+
+
+   
+    <div class="wrapper">
+        <header>
+            <div class="inner-header container" >
+                <img src="img\logo.png" alt="" class="logo">
+                 <nav>
+                    <ul id="main-menu">
+                        <li><a href="TRANGCHU.html">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                        <li><a href="datban.html">Đặt Bàn</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </header>
+       <div id="banner">
+        <img src="img\cc.jpg" alt="">
+      
+       </div>    
+    
+     </div>
+
+
+    <section class="lienhe">
+        <div class="left">
+            <h3>Liên Hệ</h3>
+            <br>
+            <p>Chúng tôi luôn trân trọng mọi ý kiến của quý khách, ý kiến từ quý khách sẽ giúp chúng tôi nâng cao về chất lượng phục vụ chính quý khách cũng góp phần vào sự thành công và phát triển thương hiệu Quán lẩu Yên Bình của chúng tôi:
+                <br>
+                <br>
+                Rất hoan nghênh các khách hàng gửi thông tin và góp ý cho chúng tôi!
+                <br>
+                <br>
+                Địa chỉ: Số 29 Thành phố Thủ Dầu Một,Tỉnh Bình Dương. <br>
+                Email: hotpotyenbinh@gmail.com <br>
+                SĐT: 0365.92.1483 <br>
+            </p>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Tên của bạn..." required><br>
+            <input type="email" placeholder="Địa chỉ email..." required><br>
+            <input type="tel" placeholder="Số điện thoại..." required><br>
+            <input type="text" placeholder="Mục đích liên hệ..."><br>
+            <textarea name="noidung" id="" cols="40" rows="10" placeholder="Nội dung chi tiết..."></textarea><br>
+            <input type="submit" value="Gửi liên hệ"><br>
+        </div>
+    </section>
+
+    
+    <!--Footer-->
+    <footer>
+        <div class="footmid">
+            <div class="col1">
+                <h6>Công ty Cổ phần Thương mại Dịch vụ Thủ Dầu Một</h6>
+                <p>Số GCNDKDN: 123456</p>
+                <p>Cấp lần đầu: Ngày 1/3/2024</p>
+                <p>Địa chỉ: Thành phố Thủ Dầu Một,Tỉnh Bình Dương</p>
+                <img src="img/thongbaocongthuong.png" alt="thongbaocongthuong">
+            </div>
+            <div class="col3">
+                <h6>Đường dây nóng</h6>
+                <p><i class="fa-solid fa-phone"></i>0365921483</p>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:hotptyenbinh@gmail.com"></a>CHILL LOUNGE@gmail.com</p>
+            </div>
+        </div>
+        <div class="footbottom">
+            <p>&copy; 2024 Golden Rate., JSC. All rights reserved</p> 
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 0){ // Thêm điều kiện để kiểm tra nếu cửa sổ được cuộn xuống
+                    $('header').addClass('sticky');
+                } else {
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

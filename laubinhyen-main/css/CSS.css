@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 90%;
+    margin: 0px auto;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: white(112, 112, 112);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid bisque;
+    height: 200px; 
+    /* cố định thanh header */
+padding: 0px 0px;
+}
+.inner-header img{
+    height:250px;
+    width: 250px;
+    
+}
+
+
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ul#main-menu{
+    display: flex;
+    font-size: 30px;  
+    height: 200px;
+  
+
+  
+}
+ul#main-menu a {
+    text-transform:uppercase;
+  padding: 10px 30px;
+ 
+  color:rgb(3, 46, 10);
+  
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+ul#main-menu li:hover {
+    background-color: black; /* Thay đổi màu nền */
+    color: white; /* Thay đổi màu chữ */
+    height: 80px;
+}
+
+#banner img{
+    height: 300px;
+    
+    background-size: cover; /* Đảm bảo hình ảnh sẽ được căn chỉnh và giãn ra để phủ toàn bộ phần tử */
+    background-position: center; /* Căn giữa hình ảnh */
+    min-height: 600px; /* Chiều cao tối thiểu của phần tử */
+    width: 100%
+    
+}
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+footer > .footmid h6 {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px;
+}
+footer > .footmid {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+footer > .footmid p {
+    margin-top: 10px;
+}
+.footer > .footmid > .col1 {
+    width: 80%;
+}
+.footer > .footmid > .col3 a {
+    text-decoration: none;
+    color: white;
+}
+footer > .footmid > .col1 img{
+    width: 200px;
+}
+.footer > .footbottom {
+    width: 100%;
+    margin: 20% auto 0;
+    padding-bottom: 20px;
+}
+header.sticky{
+    background: red;
+    opacity: 0.9;
+    padding: 15px 0px;
+    box-shadow: 10px 5px 15px;
+    height: 100px;
+    
+}
+/* làm mờ thanh header */
+header.sticky ul#main-menu > li {
+    color: #000;
+}
+/*trang đặt bàn*/
+.datban1 > h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    margin-left: 30px;
+}
+.datban1 > p {
+    font-size: 30px;
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.datban2 > h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 30px;
+}
+.datban2 > ul {
+    padding-top: 30px;
+    margin-left: 30px;
+}
+.datban2 > ul > li {
+    padding-bottom: 10px;
+}
+.datban2 > p {
+    margin-left: 25px;
+}
+.datban3 {
+    margin-left: 30px;
+    width: auto;
+}
+.datban3 > input[type=text],input[type=email],input[type=tel],input[type=number],input[type=date]{
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 20px;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+}
+.datban3 > input[type=submit] {
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0 15px;
+    color: black;
+    background-color: red;
+    max-width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3;
+}
+
+
+
+
+/*Trang menu*/
+.menu {
+    
+    padding: 20px;
+}
+
+.menu h2 {
+    text-align: center; 
+}
+
+.menu ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block; /* Hiển thị các mục cùng một hàng */
+    width: 45%; /* Độ rộng của mỗi mục */
+    margin-right: 20px;
+    vertical-align: top; 
+    margin-bottom: 20px; 
+}
+
+.menu li:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách ở mục cuối cùng */
+}
+
+.dish {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dish img {
+    width: 100%; 
+    border-radius: 5px; 
+}
+
+.dish li {
+    margin-top: 10px; 
+    color: rgb(43, 11, 11);
+    font-weight: bold;
+}
+
+.dish p {
+    font-size: 14px;
+}
+
+.dish span {
+    font-weight: bold;
+}
+
+
+/*trang giới thiệu*/
+.gioithieu > H3 {
+    font-size: 50px;
+    margin-top: 5px;
+    font-style: italic;
+}
+.gioithieu > img {
+    width: 50%;
+    height: 500px;
+    margin-left: 15px;
+}
+.gioithieu > p {
+    font-size: 20px;
+    margin: 5px 15px;
+    text-align: center;
+    
+}
+.gioithieu > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*trang liên hệ*/
+.lienhe {
+    display: flex;
+    width: 100%;
+}
+.lienhe > .left {
+    width: 50%;
+    margin: 15px;
+    padding: auto;
+}
+.lienhe > .left > h3 {
+    font-weight: bold;
+    font-size: 100px;
+    font-style: italic;
+}
+.lienhe > .left > p {
+    text-align: justify;
+    font-size: 20px;
+}
+.lienhe > .right {
+    width: 50%;
+    margin: 100px;
+    padding: auto;
+
+    
+}
+.lienhe > .right > input[type=text],input[type=email],input[type=tel],textarea{
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 20px;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+}
+.lienhe > .right > textarea {
+    line-height: 3;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+}
+.lienhe > .right > input[type=submit] {
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0 15px;
+    color: black;
+    background-color: yellow;
+    max-width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3;
+}
+
+
+/*trang chu*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: none;
+    
+    animation-name: none;
+
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  .slideshow-container {
+  
+    background-size: cover; /* Đảm bảo hình ảnh sẽ được căn chỉnh và giãn ra để phủ toàn bộ phần tử */
+    background-position: center; /* Căn giữa hình ảnh */
+    min-height: 400px; /* Chiều cao tối thiểu của phần tử */
+    width: 100%
+  }
+  
+
+
+
